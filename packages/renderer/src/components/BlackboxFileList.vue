@@ -109,13 +109,13 @@ const props = defineProps<Props>();
             <div class="flex justify-center items-center my-3">
                 <img
                     src="/gimbal-ghost.png"
-                    alt="Gimbal Ghost"
+                    alt="Gimbal Ghost for RotorFlight2"
                     class="h-20 text-center"
                 >
             </div>
 
             <h1 class="text-4xl font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-b from-blue-500 to-blue-800">
-                Gimbal Ghost
+                Gimbal Ghost for RotorFlight2
             </h1>
 
             <div class="font-normal">

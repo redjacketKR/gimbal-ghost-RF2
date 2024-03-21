@@ -74,9 +74,9 @@ export class BlackboxFlight {
         this.flightNumber = parseInt(matchGroups?.flightNumber || '00', 10);
 
         this.frameResolver = frameResolver;
-        this.outputFileName = `${this.blackboxLogName} flight ${this.flightNumber}.mov`;
+        this.outputFileName = `${this.blackboxLogName} flight ${this.flightNumber} mode${this.frameResolver.transmitterMode} fps ${this.frameResolver.fps} BnW.mov`;
         this.outputFilePath = path.resolve(outputDirectoryPath, this.outputFileName);
-
+		
         const leftDemuxOutputFilename = `${this.csvPathInfo.name}.left.demux.txt`;
         const rightDemuxOutputFilename = `${this.csvPathInfo.name}.right.demux.txt`;
         this.demuxFilePair = {
@@ -281,8 +281,8 @@ export class BlackboxFlight {
             roll: Number(logData['rcCommand[0]']),
             pitch: Number(logData['rcCommand[1]']),
             // Yaw must be inverted from the raw data
-            yaw: -Number(logData['rcCommand[2]']),
-            throttle: Number(logData['rcCommand[3]']),
+            yaw: Number(logData['rcCommand[2]']),
+            throttle: 1500+Number(logData['rcCommand[3]']),
         };
     }
 

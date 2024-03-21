@@ -17,12 +17,19 @@ export class FrameResolver {
 
     private stickFramesDirectory: string;
 
-    private transmitterMode: TransmitterModes;
+    transmitterMode: TransmitterModes;
 
     fps: number;
 
     microSecPerFrame: number;
 
+ // public int gettransmitterMode() {
+ //    return this.transmitterMode;
+ // }
+
+ // public int getfps() {
+ //    return this.fps;
+ // }
     constructor({
         stickManifestPath,
         transmitterMode = TransmitterModes.Mode2,

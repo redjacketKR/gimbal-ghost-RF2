@@ -1,7 +1,7 @@
 {
     "name": "Default Gimbals",
     "frames": {
-        "location": "./frames",
+        "location": "./frames_black",
         "fileNameFormat": "<x>_<y>.png",
         "x": {
             "min": -500,
