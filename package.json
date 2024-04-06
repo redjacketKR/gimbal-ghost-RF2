@@ -1,6 +1,6 @@
 {
-    "name": "Gimbal_Ghost_for_RotorFlight2",
-    "version": "1.2.3",
+    "name": "GimbalGhost_for_Rotorflight",
+    "version": "1.3.1",
     "author": "RedJackt & Joshua Davison",
     "license": "GPL-3.0-or-later",
     "private": true,
@@ -61,11 +61,11 @@
         "vue-tsc": "^2.0.6"
     },
     "changelog": {
-        "prereleaseInitialVersion": "1.2.1"
+        "prereleaseInitialVersion": "1.3.1"
     },
     "build": {
-        "appId": "com.electron.gimbal-ghost",
-        "productName": "Gimbal_Ghost_for_RotorFlight2",
+        "appId": "com.electron.gimbal-ghost-RF",
+        "productName": "GimbalGhost_for_Rotorflight",
         "directories": {
             "output": "releases"
         },
@@ -91,7 +91,7 @@
                     ]
                 }
             ],
-            "artifactName": "Gimbal_Ghost_for_RotorFlight2.${ext}",
+            "artifactName": "GimbalGhost_for_Rotorflight.${ext}",
             "icon": "dist/main/icon.ico"
         },
         "nsis": {
@@ -110,7 +110,7 @@
                     "arch": "x64"
                 }
             ],
-            "artifactName": "Gimbal_Ghost_for_RotorFlight2.${ext}",
+            "artifactName": "GimbalGhost_for_Rotorflight.${ext}",
             "icon": "dist/main/icon.png",
             "category": "Video"
         }
